@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/tanzanite
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/tanzanite/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
@@ -535,6 +536,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/camera/xml/tanzanite/sceneDetection_tanzanite_wide_iii.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xml/tanzanite/sceneDetection_tanzanite_wide_iii.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/camera/xml/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xml/xiaomiSceneDetection.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/cust_color_dsi_o7_38_0c_0a_dsc_vdo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color_dsi_o7_38_0c_0a_dsc_vdo.xml \
+    vendor/xiaomi/tanzanite/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/dsi_o7_38_0c_0a_dsc_vdo_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_o7_38_0c_0a_dsc_vdo_mi.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -566,6 +568,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
+    vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/android.hardware.security.keymint-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.mitee.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
@@ -592,6 +595,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
+    vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
@@ -604,6 +608,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
+    vendor/xiaomi/tanzanite/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
+    vendor/xiaomi/tanzanite/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
+    vendor/xiaomi/tanzanite/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
@@ -751,7 +758,6 @@ PRODUCT_PACKAGES += \
     APUWareHmpServer \
     APUWareUtilsServer \
     anc.hal \
-    android.hardware.security.keymint-V3-ndk-v34 \
     com.xiaomi.plugin.capbokeh \
     com.xiaomi.plugin.memcpy \
     com.xiaomi.plugin.mibokeh \
@@ -1066,6 +1072,9 @@ PRODUCT_PACKAGES += \
     libconnfem \
     libcustom_nvram \
     libcvsd_mtk \
+    libdapparamstorage \
+    libdeccfg \
+    libdlbdsservice \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
@@ -1099,6 +1108,8 @@ PRODUCT_PACKAGES += \
     libminiui \
     libmipc \
     libmisight \
+    libmisound \
+    libmisoundcrossfade \
     libmmagent \
     libmml \
     libmnetlink_v104 \
@@ -1185,6 +1196,7 @@ PRODUCT_PACKAGES += \
     libwa_dof \
     libwa_rtdof \
     libwapi \
+    libwifi-hal-mtk \
     libwpfa \
     libwvhidl \
     libwvkeybox \
@@ -1615,6 +1627,10 @@ PRODUCT_PACKAGES += \
     sc202v_truly_macro_mipi_raw_IdxMgr \
     sc202v_truly_macro_mipi_raw_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
+    libmisoundfx \
+    libswdap \
+    vendor.dolby.hardware.dms@2.0-impl \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
@@ -1671,8 +1687,32 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.xiaomi.sensor.citsensorservice@1.1 \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     JVFactoryTest_O7 \
     goodix_sz_miui \
+    ImsService \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
@@ -1684,6 +1724,8 @@ PRODUCT_PACKAGES += \
     manifest_apuware_hmp.xml \
     manifest_apuware_utils.xml \
     manifest_cameraprovider.xml \
+    manifest_media_c2_V1_2_default.xml \
+    manifest_vendor.dolby.hardware.dms.xml \
     vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
     batterysecret \
     ccci_mdinit \
@@ -1694,12 +1736,14 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
+    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.security.keymint@1.0-service.mitee \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
@@ -1722,4 +1766,5 @@ PRODUCT_PACKAGES += \
     volte_ua \
     wlan_assistant \
     wmt_launcher \
-    wmt_loader
+    wmt_loader \
+    vtservice
