@@ -8,7 +8,7 @@ ifeq ($(TARGET_DEVICE),tanzanite)
 
 $(call add-radio-file-sha1-checked,radio/dpm.img,6717e8995c945dc3fdded9031b6256788f5dd1b7)
 $(call add-radio-file-sha1-checked,radio/gz.img,090f0d5afd2bbd65207a32961af25eb91321f867)
-$(call add-radio-file-sha1-checked,radio/lk.img,2ad1a667bf14fce292dd04952b98b820db01bf3d)
+$(call add-radio-file-sha1-checked,radio/lk.img,d3330b1f3fa139fbac2695555a94e5c90f4938ff)
 $(call add-radio-file-sha1-checked,radio/mcupm.img,743add24c773742ec7914f69ed6f78ed8e961b7d)
 $(call add-radio-file-sha1-checked,radio/md1img.img,4cb8ac4be7a527a979ac08b78e50d309bf630560)
 $(call add-radio-file-sha1-checked,radio/pi_img.img,267d35040d983cea213b4a130557cfb8b56968ad)
