@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/tanzanite
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/tanzanite/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/xiaomi/tanzanite/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/xiaomi/tanzanite/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
@@ -1673,8 +1675,35 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.xiaomi.sensor.citsensorservice@1.1 \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libsignal \
+    libsink-mtk \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     JVFactoryTest_O7 \
     goodix_sz_miui \
+    HotwordEnrollmentOKGoogleRISCV \
+    HotwordEnrollmentXGoogleRISCV \
+    ImsService \
+    MtkGbaService \
+    MtkTelephonyAssist \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
+    com.android.hotwordenrollment.common.util \
+    mediatek-ims-extension-plugin \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
@@ -1728,4 +1757,12 @@ PRODUCT_PACKAGES += \
     volte_ua \
     wlan_assistant \
     wmt_launcher \
-    wmt_loader
+    wmt_loader \
+    vtservice
+
+PRODUCT_BOOT_JARS += \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
